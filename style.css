@@ -1,5 +1,37 @@
 :root {
     --main-color: rgb(232, 137, 137);
-    --secondary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(252, 207, 207);
+    --third-color: rgb(155, 83, 83);
+    --backround-color: rgb(128, 128, 128);
+}   
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    margin: 0;           
+    text-align: center;   
 }
 
+.startbutton {
+    size: 1rem;
+}
+
+.titletext {
+    font-size: 2rem;
+    animation: varinVaihto 5s infinite alternate ease-in-out;
+}
+
+@keyframes varinVaihto {
+    0% {
+        color: var(--main-color)
+    }
+    50% {
+        color: var(--secondary-color)
+    }
+    100% {
+        color: var(--third-color)
+    }
+}
