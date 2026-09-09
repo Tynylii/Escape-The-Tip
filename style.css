@@ -12,15 +12,25 @@ body {
     align-items: center;
     min-height: 100vh;  
     margin: 0;           
-    text-align: center;   
+    text-align: center;
 }
 
 .startbutton {
-    size: 1rem;
+    background-color: var(--backround-color);
+}
+
+section {
+    size: 50vh;
+}
+
+.startbutton {
+    size: 3rem;
+    border-radius: 30px;
+    border: 0px;
 }
 
 .titletext {
-    font-size: 2rem;
+    font-size: 4rem;
     animation: varinVaihto 5s infinite alternate ease-in-out;
 }
 
