@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-.startbutton {
+.start {
     background-color: var(--backround-color);
 }
 
@@ -27,6 +27,7 @@ section {
     size: 3rem;
     border-radius: 30px;
     border: 0px;
+    background-color: var(--main-color);
 }
 
 .titletext {
