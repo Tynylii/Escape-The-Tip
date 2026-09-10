@@ -19,13 +19,19 @@ body {
     background-color: var(--backround-color);
 }
 
+.credits {
+    background-color: var(--secondary-color);
+}
+
 section {
     size: 50vh;
+    width: 100%;
+    height: 100%;
 }
 
 .startbutton {
-    size: 3rem;
-    border-radius: 30px;
+    size: 10rem;
+    border-radius: 50px;
     border: 0px;
     background-color: var(--main-color);
 }
