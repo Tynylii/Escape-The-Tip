@@ -2,10 +2,15 @@
     --main-color: rgb(232, 137, 137);
     --secondary-color: rgb(252, 207, 207);
     --third-color: rgb(155, 83, 83);
-    --backround-color: rgb(128, 128, 128);
+    --background-color: #1e1e24;
 }   
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,42 +18,61 @@ body {
     min-height: 100vh;  
     margin: 0;           
     text-align: center;
+    background-color: var(--background-color);
+    color: white;
+}
+
+section {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .start {
-    background-color: var(--backround-color);
+    background-color: transparent;
 }
 
 .credits {
     background-color: var(--secondary-color);
-}
-
-section {
-    size: 50vh;
-    width: 100%;
-    height: 100%;
+    color: #222;
 }
 
 .startbutton {
-    size: 10rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
     border-radius: 50px;
-    border: 0px;
+    border: none;
     background-color: var(--main-color);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.startbutton:hover {
+    transform: scale(1.05);
+    background-color: var(--third-color);
 }
 
 .titletext {
     font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
     animation: varinVaihto 5s infinite alternate ease-in-out;
 }
 
 @keyframes varinVaihto {
     0% {
-        color: var(--main-color)
+        color: var(--main-color);
     }
     50% {
-        color: var(--secondary-color)
+        color: var(--secondary-color);
     }
     100% {
-        color: var(--third-color)
+        color: var(--third-color);
     }
 }
